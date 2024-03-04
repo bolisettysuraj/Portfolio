@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURAJ | Portfolio Website</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>   
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("l-BgDiSiLdUFXnkEj");
+    })();
+  </script>
+    
+</head>
+<body>
+    <div id="nav_bar">
+        <div class="nav_container">
+            <nav>
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+   
+    <div id="Home">
+        <div>
+        <img src="Images/background.jpg" >
+       
+        <div class="home_overlaytext">
+            <h1>
+                Hi I'm Bolisetty Suraj , Developer
+            </h1>
+            <br>
+            <p>
+                Passionated About Builiding Web Interfaces , Mobile Applications And Products
+            </p>
+        </div>
+    </div>
+    </div>
+<!-------About------>
+    <div id="About">
+        <div class="About_Container">
+            <div class="About_row">
+                <div class="About_Col1">
+                    <img src="/Images/About.jpg" >
+                </div>
+                
+                <div class="About_Col2">
+                    <h1 class="About_Header">
+                        About Me
+                    </h1>
+                    <br>
+                    <p class="About_Intro">
+                        I'm A Software Developer With 2+ Years Experience Specialized In Building Exceptional Digital Applications. Currently I'm Focussed On Builiding Websites ,Mobile Apps and Products.
+                    </p>
+                <div class="resume_btn">
+                   
+                    <a class="About_Resume" href="/SURAJ_RESUME.pdf" download >Download Resume</a>
+                    
+
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------Skills--------->
+     <div id="Skills">
+        
+        <div class="Skills_Header">
+            <h1>My Skills</h1>
+
+        </div>
+        <div class="Skills_Container">
+            <div>
+                <img src="Images/HTML.png" >
+                <div>
+                    <h3>HTML</h3>
+                </div>
+            </div>
+            <div>
+                <img src="Images/CSS.jpg" >
+                <div>
+                    <h3>CSS</h3>
+                </div>
+            </div>
+            <div>
+                <img src="Images/python.png" >
+                <div>
+                    <h3>PYTHON</h3>
+                </div>
+            </div>
+            <div>
+                <img src="Images/SQL.png" >
+                <div>
+                    <h3>SQL</h3>
+                </div>
+            </div>
+            <div>
+                <img src="Images/PLSQL.png" >
+                <div>
+                    <h3>PL/SQL</h3>
+                </div>
+            </div>
+            <div>
+                <img src="Images/VBA_Macros.png" >
+                <div>
+                    <h3>VBA_Macros</h3>
+                </div>
+            </div>
+        </div>
+     </div>
+ <!-------------Contact--------------------->   
+ <div id="Contact">
+    <div class="Contact_Container">
+        <div class="contact_row">
+            <div class="contact_Here">
+                <h1 class="Contact_Me">Contact Me</h1>
+                
+                <form onsubmit="sendMail()">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+               
+</body>
+</html>

@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #121212;
+    color: #fff;
+}
+
+.nav_container{
+    padding-top: 10px;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;   
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover {
+    color: #d91a1a;
+  }
+
+#Home img{
+    display: block;
+    width: 100%;
+    height: 100vh;
+}
+
+.home_overlaytext{
+    position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);  
+  color: #f1edf1; 
+  padding: 30px 20px;
+  font-size: 20px; 
+  text-align: center;
+}
+/*--------------------------About-----------------*/
+
+.About_Container{
+    
+    padding-top: 60px;
+}
+
+.About_row {
+    display: flex; 
+}
+
+.About_Col1 {
+    flex: 0 0 auto; 
+    margin-right: 50px; 
+}
+
+.About_Col2 {
+    flex: 2; 
+}
+
+.About_Header{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    font-style: Bold;
+}
+
+.About_Intro{
+    padding-left: 40px;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: oblique;
+}
+.resume_btn{
+    margin-top: 55px;
+    margin-left: 330px;
+}
+.About_Resume {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f5f6f5;
+    color: rgb(210, 23, 23);
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.About_Resume:hover{
+    background-color:#0d81e7 ;
+}
+
+/*--------------------------Skills-----------------*/
+
+#Skills{
+    padding-top: 60px;
+}
+.Skills_Header{
+    text-align: center;
+}
+.Skills_Container img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    
+}
+
+.Skills_Container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Skills_Container > div {
+    width: calc(33.33% - 10px); 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+/*--------------------------Contact Me-----------------*/
+#Contact {
+    margin-left: 40px;
+    padding: 20px;
+    color: #fff;
+}
+
+.Contact_Container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact_Here {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact_Here h1.Contact_Me {
+    color: #FFA500;
+}
+
+.contact_Here form input[type="text"],
+.contact_Here form input[type="email"],
+.contact_Here form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #000;
+}
+
+.contact_Here form button[type="submit"] {
+    background-color: #FFA500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 550px) {
+    #Home img{
+        display: block;
+        width: 100%;
+        height: 200%;
+    }
+    .home_overlaytext{
+        position: absolute;
+      top: 25%; 
+      left: 50%; 
+      transform: translate(-50%, -50%);  
+      color: #f6f4f4; 
+      font-size: 12px; 
+      text-align: center;
+    }
+    .home_overlaytext h1{
+        font-size: 17px; 
+    }
+    .About_row {
+        display: block;
+    }
+    .About_Col1 Img{
+        width: 115%;
+        height: 100%;
+    }
+   .About_Col2{
+    justify-content: center;
+    padding-top: 10px;
+   
+   }
+    .About_Header{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 500;
+        font-style: Bold;
+    }    
+    
+    .About_Intro{
+        padding-left: 30px;
+        font-size: 15px;
+        font-weight: 500;
+        font-style: oblique;
+    }
+    .resume_btn{
+        margin-top: 55px;
+        margin-left: 35%;
+    }
+    .Skills_Container {
+        display: block;
+    }
+    .Skills_Container {
+       margin-left: 24%;
+    }
+    .Skills_Container {
+        text-align: center;
+    }
+   
+    .Contact_Container{
+        margin-right: 30px;
+    }
+}
